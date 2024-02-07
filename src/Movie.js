@@ -32,13 +32,14 @@ class Movie extends React.Component {
     if (!this.state.movie) {
       return null;
     }
+
     const {
       Title,
       Year,
-      Plot,
-      Director,
-      imdbRating,
-      Poster,
+       Plot,
+       Director,
+       imdbRating,
+       Poster,
     } = this.state.movie;
 
     return (

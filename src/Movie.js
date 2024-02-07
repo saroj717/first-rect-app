@@ -1,5 +1,5 @@
 import React from 'react';
-import {json, checkStatus} from './utils';
+import { json, checkStatus } from './utils';
 
 class Movie extends React.Component {
   constructor(props) {
@@ -11,22 +11,21 @@ class Movie extends React.Component {
 
   componentDidMount () {
     fetch(`https://www.omdbapi.com/?i=${this.props.match.params.id}&apikey=b7da8d63`)
-    .then(checkStatus)
-    .then(json)
-    .then((data) => {
-      if(data.Response === 'False') {
-        throw new Error(data.Error);
-      }
-
-      if(data.Response === 'True') {
-        console.log(data);
-        this.setState({movie: data, error: ''});
-      }
-    })
-    .catch((error) => {
-      this.setState({error: error.message});
-      console.log(error);
-    })
+      .then(checkStatus)
+      .then(json)
+      .then((data) => {
+        if (data.Response === 'False') {
+          throw new Error(data.Error);
+        }
+        if (data.Response === 'True') {
+          console.log(data);
+          this.setState({ movie: data, error: '' });
+        }
+      })
+      .catch((error) => {
+        this.setState({ error: error.message });
+        console.log(error);
+      })
   }
 
   render() {
@@ -56,10 +55,10 @@ class Movie extends React.Component {
                 <p>Director: {Director}</p>
               </li>
               <li>
-                <p>imdbRating: {imdbRating} / 10</p>
+                <p>Plot: {Plot}</p>
               </li>
               <li>
-                <p>Plot: {Plot}</p>
+                <p>imdbRating: {imdbRating} / 10</p>
               </li>
             </ul>
           </div>

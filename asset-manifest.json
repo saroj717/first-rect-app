@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/first-rect-app/static/css/main.e9995732.css",
+    "main.js": "/first-rect-app/static/js/main.69b73b57.js",
+    "static/js/592.fc1fab97.chunk.js": "/first-rect-app/static/js/592.fc1fab97.chunk.js",
+    "index.html": "/first-rect-app/index.html",
+    "main.e9995732.css.map": "/first-rect-app/static/css/main.e9995732.css.map",
+    "main.69b73b57.js.map": "/first-rect-app/static/js/main.69b73b57.js.map",
+    "592.fc1fab97.chunk.js.map": "/first-rect-app/static/js/592.fc1fab97.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e9995732.css",
+    "static/js/main.69b73b57.js"
+  ]
+}
